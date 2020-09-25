@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: bottom right / 140% no-repeat url("../images/bg.svg"), #303030;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-wrapper {
+    
+}
+
+.figma-logo {
+    text-align: center;
+}
+
+.figma-logo img{
+    transition: 500ms;
+}
+
+.figma-logo img:hover{
+    transform: scale(1.2);
+}
+
+.form-input {
+    position: relative;
+    width: clamp(200px, 50vw, 400px);
+    height: 80px;
+    margin-top: 20px;
+}
+
+.form-input input {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    width: 100%;
+    border-radius: 7px;
+    border: none;
+    margin-top: 20px;
+    height: 60px;
+    line-height: 1.5rem;
+    padding: 2rem 60px;
+    outline: none;
+    font-size: 1.5rem;
+    background: rgba(255, 255, 255, 0.31);
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 6px;
+    color: rgb(223, 223, 223);
+}
+
+.form-input input::placeholder {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    color: rgb(223, 223, 223);
+}
+
+.form-input img {
+    position: absolute;
+    top: 38px;
+    left: 15px;
+    width: 30px;
+    height: 30px;
+}
+
+.form-input-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.form-input-buttons button {
+    width: 100%;
+    height: 60px;
+    border-radius: 7px;
+    border: none;
+}
+
+.primary-btn {
+    background: #005BC6;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 6px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 30px;
+
+    color: #FFFFFF;
+}
+
+.primary-btn:hover {
+    background: #CA4900;
+
+    color: #ffffff;
+}
+
+
+
+.form-input-footer {
+    text-align: right;
+    margin-top: 10px;
+    
+}
+.form-input-footer a {
+    font-size: 1.1rem;
+    color: white;
+    text-decoration: none;
+
+}

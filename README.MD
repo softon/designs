@@ -9,3 +9,6 @@
 
 ## Figma Login ([Checkout the Page](https://softon.github.io/designs/figma_login/))
 ![Figma Login](./figma_login/design.svg)
+
+## Dark Login ([Checkout the Page](https://softon.github.io/designs/dark_login/))
+![Dark Login](./dark_login/design.svg)
