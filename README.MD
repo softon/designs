@@ -6,3 +6,6 @@
 ## AutoGa ([Checkout the Page](https://softon.github.io/designs/autoga/))
 ![AutoGa](./autoga/design.svg)
 ![AutoGa Mobile](./autoga/design2.svg)
+
+## Figma Login ([Checkout the Page](https://softon.github.io/designs/figma_login/))
+![Figma Login](./figma_login/design.svg)

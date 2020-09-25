@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: center 0% / 100% no-repeat url("../images/bg.svg"), #00488A;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-wrapper {
+    
+}
+
+.figma-logo {
+    text-align: center;
+}
+
+.form-input {
+    position: relative;
+    width: clamp(200px, 50vw, 400px);
+    height: 80px;
+    margin-top: 20px;
+}
+
+.form-input input {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    width: 100%;
+    border-radius: 7px;
+    border: none;
+    margin-top: 20px;
+    height: 60px;
+    line-height: 1.5rem;
+    padding: 2rem 60px;
+    outline: none;
+    font-size: 1.5rem;
+}
+
+.form-input input::placeholder {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+}
+
+.form-input img {
+    position: absolute;
+    top: 30px;
+    left: 10px;
+}
+
+.form-input-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.form-input-buttons button {
+    width: 48%;
+    height: 60px;
+    border-radius: 7px;
+    border: none;
+}
+
+.primary-btn {
+    background: #00CA69;
+    mix-blend-mode: normal;
+    text-align: center;
+    font-family: Nobile;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 34px;
+    letter-spacing: -0.01em;
+
+    color: #000000;
+}
+
+.secondary-btn {
+    background: #4700DD;
+    mix-blend-mode: normal;
+    text-align: center;
+    font-family: Nobile;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 34px;
+    letter-spacing: -0.01em;
+
+    color: #ffffff;
+}
+
+
+.form-input-footer {
+    text-align: right;
+    margin-top: 20px;
+    
+}
+.form-input-footer a {
+    font-size: 1.4rem;
+    color: white;
+    text-decoration: none;
+
+}
