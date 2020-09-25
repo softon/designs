@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ruluko', cursive;
+}
+
+
+.left {
+    background: #9F0000;
+    text-align: center;
+    color: white;
+}
+
+.left-body img, .left-body h1, .left-body blockquote  {
+    display: none;
+}
+
+.logo-text {
+    font-family: Rochester;
+    font-size: 2em;
+}
+
+.left-button {
+    background: linear-gradient(180deg, #ffffff5b 0%, rgba(255, 255, 255, 0.32) 100%);
+    background-blend-mode: overlay;
+    box-shadow: -4px -4px 8px rgba(113, 113, 113, 0.25), 4px 4px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 45px;
+    border: none;
+    margin: 20px auto;
+    padding: 5px 10px;
+    font-size: 1em;
+    color: white;
+    transition: 300ms;
+}
+
+.left-button:hover {
+    box-shadow: -4px -4px 8px 2px rgba(212, 212, 212, 0.25), 4px 4px 8px 2px rgba(98, 98, 98, 0.25);
+    transform: scale(1.1);
+}
+
+.right {
+    text-align: center;
+}
+
+form {
+    width: 70%;
+    margin: 30px auto;
+}
+
+form h1 {
+    margin-bottom: 30px;
+}
+
+.input-container {
+    margin: 20px auto;
+}
+
+.input-container label {
+    display: block;
+    text-align: left;
+    font-family: Ruluko;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 1.2em;
+    letter-spacing: 0.03em;
+    margin-bottom: 6px;
+    color: #000000;
+}
+.input-container input {
+    width: 100%;
+    background: #FFFFFF;
+    border: 1px solid #636363;
+    box-sizing: border-box;
+    border-radius: 5px;
+    line-height: 1.2em;
+    font-size: 1em;
+    height: 40px;
+    padding-left: 10px;
+}
+
+.input-container button {
+    background: #9F0000;
+    border-radius: 5px;
+    border: none;
+    display: block;
+    width: 100%;
+    line-height: 1.2em;
+    font-size: 1.3em;
+    color: white;
+    padding: .5em;
+    transition: 300ms;
+}
+
+.input-container button:hover {
+    background: #d60000;
+}
+
+@media (min-width : 700px) {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        transition: 500ms;
+    }
+
+    .left {
+        width: 50vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+
+    .face-wrapper img, .left-body h1, .left-body blockquote  {
+        display: block;
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    .logo-wrapper {
+        margin-bottom: 12vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3vh;
+    }
+
+    .logo-image img {
+        width: 80%;
+    }
+
+    .logo-text {
+        font-size: 2.5em;
+    }
+
+    .left-body {
+        width: 100%;
+        align-self: center;
+    }
+
+    .face-wrapper img {
+        width: 20vh;
+    }
+
+    .right {
+        width: 50vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .left-button {
+        border-radius: 45px;
+        border: none;
+        margin: 20px auto;
+        padding: 15px 25px;
+        font-size: 2em;
+    }
+
+}
+
+@media (min-width : 1200px) {
+    form {
+        width: 50%;
+    }
+}

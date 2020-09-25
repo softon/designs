@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Rowdies', cursive;
+}
+
+body {
+    background-color: rgb(255, 221, 221);
+}
+
+header {
+    background-color: rgb(170, 0, 0);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    line-height: 60px;
+}
+
+header .logo {
+    font-size: 2rem;
+    margin-left: 20px;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+header ul li {
+    list-style: none;
+    width: 90px;
+    cursor: pointer;
+    transition: 400ms;
+}
+
+header ul li:hover {
+    transform: translateY(-4px);
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    height: calc(100vh - 90px);
+    text-align: center;
+    align-items: center;
+}
+
+main .home-contents {
+    max-width: 30vw;
+}
+
+main .home-contents h1 {
+    color: rgb(170, 0, 0);
+    font-size: 3rem;
+    
+}
+
+main .home-contents p {
+    color: rgb(42, 42, 42);
+    
+}
+
+main .img-home img {
+    width: 50vw;
+    border-radius: 15px;
+    box-shadow: 5px 5px 8px rgb(75, 75, 75);
+    transition: 500ms;
+}
+
+main .img-home img:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    text-align: center;
+    height: 30px;
+    color: rgb(56, 56, 56);
+    font-weight: 100;
+}
+
+footer a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 600;
+}
