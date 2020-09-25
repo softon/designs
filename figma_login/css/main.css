@@ -22,6 +22,14 @@ body {
     text-align: center;
 }
 
+.figma-logo img{
+    transition: 500ms;
+}
+
+.figma-logo img:hover{
+    transform: scale(1.2);
+}
+
 .form-input {
     position: relative;
     width: clamp(200px, 50vw, 400px);
@@ -78,8 +86,14 @@ body {
     font-size: 30px;
     line-height: 34px;
     letter-spacing: -0.01em;
-
+    transition: 300ms;
     color: #000000;
+}
+
+.primary-btn:hover {
+    background: #CA4900;
+
+    color: #ffffff;
 }
 
 .secondary-btn {
@@ -92,8 +106,13 @@ body {
     font-size: 30px;
     line-height: 34px;
     letter-spacing: -0.01em;
-
+    transition: 300ms;
     color: #ffffff;
+}
+
+.secondary-btn:hover {
+    background: #cb00dd;
+    color: #000000;
 }
 
 
