@@ -12,3 +12,6 @@
 
 ## Dark Login ([Checkout the Page](https://softon.github.io/designs/dark_login/))
 ![Dark Login](./dark_login/design.svg)
+
+## Brainiak ([Checkout the Page](https://softon.github.io/designs/brainiack/))
+![Dark Login](./brainiack/design.svg)

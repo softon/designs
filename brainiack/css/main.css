@@ -1,0 +1,401 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+
+/* Header */
+header {
+    background: #067ABB;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+}
+
+.logo-holder {
+    margin: 4px 0px 4px 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-holder span {
+    font-family: 'Sacramento', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 48px;
+    margin-top: 15px;
+    text-align: center;
+    letter-spacing: 0.105em;
+
+    color: #FFFFFF;
+}
+
+.menu-wrapper {
+
+}
+
+.menu-wrapper ul {
+    height: 90px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-wrapper ul li {
+    margin-right: 60px;
+}
+
+.menu-wrapper ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.menu-wrapper ul li a:hover{
+    border-bottom: 3px solid white;
+}
+
+.menu-drawer {
+    display: none;
+}
+
+/* Slider */
+.slider-container {
+    height: 750px;
+    background: local bottom / 100% url("../images/bg.svg") no-repeat;
+    padding: 50px;
+}
+
+.slider {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 550px;
+}
+
+.slider-text {
+    width: 40vw;
+    text-align: center;
+}
+.slider-text h1{
+    font-size: 44px;
+}
+
+.slider-image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 45vw;
+}
+
+.slider-image img {
+    position: absolute;
+}
+
+.slider-image img:nth-child(2) {
+    pointer-events: none;
+}
+
+.slider-image img:first-child {
+    transition: 500ms;
+}
+
+.slider-image img:first-child:hover {
+    transform: rotate(-15deg);
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social .facebook {
+    margin-right: 10vw;
+    font-size: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social .facebook span {
+    margin-left: 10px;
+}
+
+.social .youtube {
+    font-size: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social .youtube span {
+    margin-left: 10px;
+}
+
+/* Card Container */
+.card-container {
+    background: #067ABB;
+    display: flex;
+    justify-content: space-around;
+}
+
+.single-card {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    width: 25vw;
+    background: rgba(255, 255, 255, 0.32);
+    border-radius: 18px;
+    padding: 2em;
+    text-align: center;
+}
+
+.single-card img {
+    width: 50%;
+    height: 50%;
+    margin: 20px auto;
+}
+
+.single-card h2,.single-card small {
+    color: white;
+}
+
+.card-footer img {
+    /*background: local bottom / 100% url("../images/card_footer.svg") no-repeat;
+    height: 20vh;
+    width: 100vw;
+    overflow-x: hidden;*/
+    width: 99vw;
+}
+
+.footer-wrapper h3 {
+    text-align: center;
+    font-size: 29px;
+    line-height: 38px;
+    text-align: center;
+    letter-spacing: 0.105em;
+    text-decoration-line: underline;
+    margin-bottom: 20px;
+    color: #067ABB;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-form {
+    width: 50vw;
+    padding: 10px 5vw;
+    border-right: 1px dotted blue;
+}
+
+.input-element {
+    display: flex;
+    margin: 10px auto;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.input-element label {
+    width: 230px;
+    height: 50px;
+    font-size: 29px;
+    line-height: 38px;
+    text-align: center;
+    letter-spacing: 0.105em;
+
+    color: #000000;
+}
+
+.input-element input {
+    background: #FFFFFF;
+    border: 1px solid #C6C6C6;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 2px #353535;
+    border-radius: 20px;
+    outline: none;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.input-element textarea {
+    background: #FFFFFF;
+    border: 1px solid #C6C6C6;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 2px #353535;
+    border-radius: 20px;
+    outline: none;
+    padding: 10px 20px;
+    height: 100px;
+    width: 100%;
+}
+
+.input-element button {
+    background: #067ABB;
+    box-shadow: 1px 1px 2px #7A7A7A;
+    border-radius: 20px;
+    color: white;
+    padding: 10px 25px;
+    font-size: 1rem;
+    border: none;
+    margin-left: 160px;
+}
+
+.address  {
+    font-size: 1.5rem;
+    padding: 2rem;
+
+}
+
+.address div {
+    display: flex;
+    align-items: flex-start;
+}
+.address div span:first-child {
+    font-weight: bold;
+    width: 40%;
+    text-align: right;
+}
+
+.address div span:nth-child(2) {
+    width: 40%;
+    margin-left: 10px;
+}
+
+@media (max-width: 1024px){
+    .menu-drawer {
+        display: flex;
+        margin-right: 20px;
+    }
+
+    .menu-drawer img {
+        width: 49px;
+    }
+
+    .menu-wrapper {
+        display: none;
+    }
+
+    .slider-image {
+        display: none;
+    }
+
+    .slider-container {
+        height: 400px;
+    }
+
+    .slider {
+        height: 200px;
+    }
+
+    .slider-text {
+        width: 100vw;
+        text-align: center;
+        align-self: flex-start;
+    }
+    .slider-text h1{
+        font-size: 38px;
+    }
+
+    .social {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .social .facebook {
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .social .facebook span {
+        margin-left: 10px;
+    }
+    
+    .social .facebook img {
+        width: 30px;
+    }
+    .social .youtube img {
+        width: 38px;
+    }
+    
+    .social .youtube {
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .social .youtube span {
+        margin-left: 10px;
+    }
+
+    nav {
+        height: 60px;
+    }
+
+    .logo-holder img {
+        width: 20%;
+    }
+    
+    .logo-holder span {
+        font-family: 'Sacramento', cursive;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 48px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .contact-form {
+        
+        border-right: none;
+    }
+
+    .card-container {
+        flex-direction: column;
+    }
+
+    .single-card {
+        width: 90vw;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+}
+
+
+footer {
+    text-align: center;
+    color: gray;
+}
