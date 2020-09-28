@@ -1,0 +1,76 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 35px;
+
+    color: #B8B8B8;
+}
+
+body {
+    background: #343434;
+}
+
+.calculator {
+    display: grid;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+
+.keys {
+    display: grid;
+    grid-template-columns: repeat(4, 70px);
+    grid-template-rows: repeat(6, 70px);
+    gap: 20px;
+    
+}
+
+.keys div {
+    background: #343434;
+    /* SoftUI */
+    cursor: pointer;
+    box-shadow: -4px -4px 8px rgba(158, 158, 158, 0.19), 4px 4px 8px rgba(0, 0, 0, 0.37);
+    border-radius: 5px;
+    vertical-align: middle;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.keys div:active:not(.display) {
+    box-shadow: inset -4px -4px 8px rgba(158, 158, 158, 0.19), inset 4px 4px 8px rgba(0, 0, 0, 0.37), 0px 0px 12px limegreen;
+}
+
+.key-c {
+    grid-column: 1/3;
+}
+
+.key-eq {
+    grid-column: 3/5;
+}
+
+.display {
+    grid-column: 1/5;
+    background: #343434;
+    /* SoftUI */
+
+    box-shadow: -4px -4px 8px rgba(158, 158, 158, 0.19), 4px 4px 8px rgba(0, 0, 0, 0.37);
+    border-radius: 5px;
+    
+    font-family: Orbitron;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 33px;
+    line-height: 41px;
+    text-align: right;
+
+    color: #00C42B;
+    width: 100%;
+    display: block;
+}
