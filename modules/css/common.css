@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+}
+
+.wrapper {
+    min-height: 80vh;
+    background-color: beige;
+    border: 1px dotted gray;
+}
+
+.box {
+    width: 300px;
+}
+
+.box:nth-child(1) {
+    background: linear-gradient(to bottom, rgb(255, 0, 0) , rgb(190, 0, 0));
+}
+
+.box:nth-child(2) {
+    background: linear-gradient(to bottom, rgb(21, 255, 0) , rgb(0, 190, 95));
+}
+
+.box:nth-child(3) {
+    background: linear-gradient(to bottom, rgb(17, 0, 255) , rgb(104, 0, 190));
+}

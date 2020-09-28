@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+}
+
+.header {
+    background: #393939;
+    display: flex;
+    height: 60px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu ul li {
+    padding: 0px 30px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+}
+
+.login-btn {
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 25px;
+    height: 30px;
+    display: flex;
+    align-items: center;   
+    margin-left: auto; 
+}
