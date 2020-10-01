@@ -19,11 +19,14 @@
 
 
 ## Modules
-### Navbars ([Checkout the Page](https://softon.github.io/modules/navbar.html))
+### Navbars ([Checkout the Page](https://softon.github.io/designs/modules/navbar.html))
 ![Navbar](./modules/navbars.svg)
 
-### Light Card ([Checkout the Page](https://softon.github.io/modules/light_card.html))
+### Light Card ([Checkout the Page](https://softon.github.io/designs/modules/light_card.html))
 ![Navbar](./modules/card_light.svg)
 
-### Dark Card ([Checkout the Page](https://softon.github.io/modules/dark_card.html))
+### Dark Card ([Checkout the Page](https://softon.github.io/designs/modules/dark_card.html))
 ![Navbar](./modules/card_dark.svg)
+
+### Switch ([Checkout the Page](https://softon.github.io/designs/modules/dark_card.html))
+![Navbar](./modules/switch.svg)
