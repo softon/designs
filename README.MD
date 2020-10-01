@@ -28,5 +28,5 @@
 ### Dark Card ([Checkout the Page](https://softon.github.io/designs/modules/dark_card.html))
 ![Navbar](./modules/card_dark.svg)
 
-### Switch ([Checkout the Page](https://softon.github.io/designs/modules/dark_card.html))
+### Switch ([Checkout the Page](https://softon.github.io/designs/modules/switch.html))
 ![Navbar](./modules/switch.svg)
