@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="dark">
-        <div class="switch selected">
+        <div class="switch">
             <div class="knob">
                 <div class="led"></div>
             </div>
@@ -21,6 +21,15 @@
             </div>
         </div>
     </div>
-
+    <script>
+        var ds = document.querySelector(".dark .switch .knob");
+        ds.addEventListener("click", (event) => {
+            document.querySelector(".dark .switch").classList.toggle('selected');
+        });
+        var ls = document.querySelector(".light .switch .knob");
+        ls.addEventListener("click", (event) => {
+            document.querySelector(".light .switch").classList.toggle('selected');
+        });
+    </script>
 </body>
 </html>
