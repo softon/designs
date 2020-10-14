@@ -1,0 +1,225 @@
+* {
+   margin: 0px;
+   box-sizing: border-box;
+   padding: 0px;
+}
+
+body {
+    background: linear-gradient(180deg, #000d47 0%, #003B6D 25%, #006A97 53.13%, #009BAB 77.6%, #00C9A8 100%);
+    min-height: 100vh;
+}
+
+header {
+    max-width: 1050px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+header .logo {
+    margin-left: 25px;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header ul li a {
+    color: #FFFADE;
+    font-family: Salsa, cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    text-decoration: none;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    
+}
+
+.logo-modal {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+nav .active {
+    background: rgba(255, 255, 255, 0.14);
+    border-radius: 30px;
+}
+
+.container {
+    max-width: 1050px;
+    margin: 0px auto;
+}
+
+
+.bg-image {
+    position: relative;
+    margin-top: 200px;
+    min-height: calc(100vh - 269px);
+    text-align: center;
+    background: top center / cover url("../images/bg.svg") no-repeat, linear-gradient(to bottom, rgba(255,255,255,0) 50%, #00C9A8 50%);
+}
+
+.user-dp {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.user-dp img {
+    width: clamp(170px,20vw,250px);
+}
+
+.content {
+    padding-top: clamp(100px,10vw,140px);
+    
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.content h1 {
+    font-family: Sail;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 51.25px;
+    line-height: 59px;
+
+    color: #FFFADE;
+
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.content h5 {
+    font-weight: 300;
+    font-size: 2em;
+}
+
+.content h6 {
+    font-weight: 100;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-weight: 100;
+    font-size: 1.5em;
+    text-align: justify;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-links a {
+    background: linear-gradient(180deg, #1E1036 0%, #003B6D 100%);
+    border-radius: 32.6927px;
+    color: white;
+    text-decoration: none;
+    padding: 5px 15px;
+    margin: 0px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-links a span {
+    margin-left: 10px;
+}
+
+
+@media (max-width: 900px){
+    nav ul{
+        display: none;
+    }
+
+    .modal-open .logo-modal {
+        position: absolute;
+        top: 0px;
+        height: 90px;
+        display: flex;
+        justify-content: space-between;
+        width: 100vw;
+        background-color: rgb(255, 255, 255);
+        padding: 20px 25px;
+        
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    nav.modal-open  {
+        position: fixed;
+        top: 0px;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(41, 41, 41, 0.603);
+        z-index: 2;
+    }
+
+    nav.modal-open  ul {
+        position: absolute;
+        top: 90px;
+        display: block;
+        width: 100vw;
+        background-color: rgb(255, 255, 255);
+    }
+
+    header .modal-open  ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-arround;
+        flex-direction: column;
+    }
+    
+    header .modal-open  ul li {
+        background: #F0F0F0;
+        width: 96%;
+        margin: 5px auto;
+        margin-bottom: 5px;
+        padding: 10px ;
+    }
+
+    header .modal-open  ul li:last-child {
+        margin-bottom: 20px;
+    }
+
+    header .modal-open  ul li.active {
+        background: #0B2B59;
+        color: white;
+        border-radius: 0px;
+    }
+
+    header .modal-open  ul li.active a {
+        color: white;
+    }
+
+    header .modal-open  ul li a {
+        color: #222222;
+        font-family: Salsa, cursive;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.5rem;
+        text-decoration: none;
+        
+        
+    }
+}
