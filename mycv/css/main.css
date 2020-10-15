@@ -68,8 +68,16 @@ nav .active {
 
 .bg-image {
     position: relative;
-    margin-top: 200px;
-    min-height: calc(100vh - 269px);
+    margin-top: 100px;
+    min-height: calc(100vh - 169px);
+    text-align: center;
+    background: top center / cover url("../images/bg.svg") no-repeat, linear-gradient(to bottom, rgba(255,255,255,0) 50%, #00C9A8 50%);
+}
+
+.bg-landing {
+    position: relative;
+    margin-top: 300px;
+    min-height: calc(100vh - 369px);
     text-align: center;
     background: top center / cover url("../images/bg.svg") no-repeat, linear-gradient(to bottom, rgba(255,255,255,0) 50%, #00C9A8 50%);
 }
@@ -87,11 +95,20 @@ nav .active {
 }
 
 .content {
+    padding-top: 50px;
+    
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.bg-landing .content {
     padding-top: clamp(100px,10vw,140px);
     
     margin-left: 25px;
     margin-right: 25px;
 }
+
+
 
 .content h1 {
     font-family: Sail;
@@ -145,7 +162,278 @@ nav .active {
 }
 
 
+
+
+
+/* Qualifications */
+.social-links-small a{
+    width: 35px;
+    height: 35px;
+}
+
+.qcard-container {
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.qcard {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    width: minmax(290px,100%);
+    margin: 30px;
+    padding: 30px;
+    min-height: 370px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.qcard h2 {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 21px;
+
+    color: #2B2B2B;
+    margin-top: 20px;
+}
+
+.qcard h5 {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 21px;
+
+    color: #2B2B2B;
+    margin-top: 20px;
+}
+.qcard p {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 62.5px;
+    line-height: 21px;
+
+    color: #007205;
+    margin-top: 40px;
+}
+
+
+/* Skills */
+.skills-container {
+    padding: 60px 0px;
+}
+
+.skills {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    
+} 
+
+.skills:nth-child(odd) {
+    justify-content: flex-start;
+}
+
+.skills:nth-child(even) {
+    justify-content: flex-end;
+}
+
+.skills h2 {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 31.8px;
+    line-height: 36px;
+}
+.skills:nth-child(odd) h2 {
+    text-align: left;
+}
+.skills:nth-child(even) h2 {
+    text-align: right;
+}
+
+.skills p {
+
+}
+
+
+/* Projects */
+.projects-container {
+    padding: 60px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.projects-container table {
+    border-spacing: 0px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.projects-container table tr th,.projects-container table tr td {
+    border: 1px solid rgb(185, 185, 185);
+    padding: 10px 50px;
+    
+}
+
+.projects-container table thead tr {
+    background-color: tomato;
+    
+}
+
+.projects-container table thead tr th:nth-child(1) {
+    border-radius: 15px 0px 0px 0px;
+    
+}
+
+.projects-container table thead tr th:nth-child(3) {
+    border-radius: 0px 15px 0px 0px;
+    
+}
+.projects-container table tbody tr:last-child td:nth-child(1) {
+    border-radius: 0px 0px 0px 15px;
+    
+}
+.projects-container table tbody tr:last-child td:nth-child(3) {
+    border-radius: 0px 0px 15px 0px;
+    
+}
+.projects-container table tbody a {
+    text-decoration: none;
+    color: tomato;
+    
+}
+
+.projects-container table tbody tr td:nth-child(2) a {
+    display: none;
+}
+
+
+/* Contact */
+.contacts-container {
+    padding: 60px 0px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    row-gap: 40px;
+}
+
+.contacts-container h2 {
+    text-align: left;
+}
+
+.contact-text {
+    width: minmax(500px,50%);
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+.contact-text div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.contact-text div img {
+    width: 40px;
+}
+.contact-text div span {
+    font-size: 1.2em;
+    font-weight: 100;
+}
+
+.contact-form {
+    width: minmax(500px,50%);
+    background: rgba(255, 255, 255, 0.51);
+    border-radius: 9px;
+    padding: 20px;
+}
+
+.contact-form div {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.contact-form div label {
+    width: 120px;
+    background: #E9E9E9;
+    border-radius: 5px 0px 0px 5px;
+    line-height: 50px;
+}
+.contact-form div input {
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+    line-height: 50px;
+    padding: 0px 10px;
+    font-size: 1em;
+}
+
+.contact-form .address {
+    width: 100%;
+    background: #ffffff;
+    border-radius: 5px;
+    display: block;
+    padding: 10px;
+}
+
+.contact-form .address label {
+    display: block;
+    width: 100%;
+    background: #ffffff;
+    line-height: 5px;
+    text-align: left;
+    padding: 10px;
+}
+
+.contact-form .address textarea {
+    display: block;
+    width: 100%;
+    background: #E9E9E9;
+    border-radius: 5px;
+    padding: 10px;
+    min-height: 80px;
+    border: none;
+    outline: none;
+}
+
+
+.form-submit button {
+    background: linear-gradient(180deg, #1E1036 0%, #003B6D 100%);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 21px;
+    color: #FFFFFF;
+    border: none;
+    font-size: 1.1em;
+    padding: 5px 20px;
+    margin-left: auto;
+}
+
+
+
+
 @media (max-width: 900px){
+    .bg-image {
+        margin-top: 100px;
+        min-height: calc(100vh - 169px);
+        
+    }
+    .bg-landing {
+        margin-top: 200px;
+        min-height: calc(100vh - 269px);
+        
+    }
+
     nav ul{
         display: none;
     }
@@ -220,6 +508,42 @@ nav .active {
         font-size: 1.5rem;
         text-decoration: none;
         
+        
+    }
+    
+    /* Table Responsive */
+    .projects-container table tr th:first-child,
+    .projects-container table tr th:last-child,
+    .projects-container table tr td:first-child,
+    .projects-container table tr td:last-child {
+        display: none;
+        
+    }
+
+    .projects-container table thead tr th:nth-child(2) {
+        border-radius: 15px 15px 0px 0px;
+        
+    }
+    
+    .projects-container table tbody tr:last-child td:nth-child(2) {
+        border-radius: 0px 0px 15px 15px;
+        
+    }
+
+    .projects-container table thead tr th {
+        text-align: left;
+        
+    }
+    
+    .projects-container table tbody tr td {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 40px;
+        
+    }
+    .projects-container table tbody tr td:nth-child(2) a {
+        display: inline-block;
         
     }
 }
