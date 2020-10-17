@@ -1,0 +1,136 @@
+nav ul li:nth-child(1) {
+    animation: bouncebtn 3000ms cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+nav ul li:nth-child(2) {
+    animation: bouncebtn 3000ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 100ms forwards;
+}
+nav ul li:nth-child(3) {
+    animation: bouncebtn 3000ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 200ms forwards;
+}
+nav ul li:nth-child(4) {
+    animation: bouncebtn 3000ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 300ms forwards;
+}
+nav ul li:nth-child(5) {
+    animation: bouncebtn 3000ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 400ms forwards;
+}
+
+
+@keyframes slidedown {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+.social-links a:nth-child(1) {
+    transform: translateY(100px);
+    opacity: 0;
+    animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2600ms both;
+}
+
+.social-links a:nth-child(2) {
+    transform: translateY(100px);
+    opacity: 0;
+    animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2800ms both;
+}
+
+.social-links a:nth-child(3) {
+    transform: translateY(100px);
+    opacity: 0;
+    animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 3000ms both;
+}
+
+
+@keyframes slide-top {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+  }
+  
+
+  
+
+.animation-target {
+    -webkit-animation: animation 3000ms linear both;
+    animation: animation 3000ms linear both;
+  }
+  
+ 
+  
+ 
+  @keyframes bouncebtn { 
+    0% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -100, 0, 1); }
+    2.4% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -52.397, 0, 1); }
+    4.8% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -0.788, 0, 1); }
+    6.71% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -26.439, 0, 1); }
+    8.51% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -33.504, 0, 1); }
+    11.41% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -20.235, 0, 1); }
+    14.31% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -0.165, 0, 1); }
+    18.02% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -10.504, 0, 1); }
+    23.82% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -0.026, 0, 1); }
+    27.53% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -3.293, 0, 1); }
+    33.33% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    37.04% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -1.032, 0, 1); }
+    42.94% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -0.015, 0, 1); }
+    46.55% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -0.324, 0, 1); }
+    52.45% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -0.004, 0, 1); }
+    56.16% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -0.101, 0, 1); }
+    61.96% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -0.001, 0, 1); }
+    65.67% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -0.032, 0, 1); }
+    71.47% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    75.18% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -0.01, 0, 1); }
+    81.08% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    84.68% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -0.003, 0, 1); }
+    90.59% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    94.29% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -0.001, 0, 1); }
+    100% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); } 
+  }
+  
+  
+  .user-dp {
+      opacity: 0;
+      animation: fadein 800ms ease-in 200ms forwards;
+  }
+
+
+  @keyframes fadein {
+      from {
+          opacity: 0;
+      }
+
+      to {
+          opacity: 1;
+      }
+  }
+
+
+  .content h1 {
+        opacity: 0;
+        animation: fadein 800ms ease-in 600ms forwards;
+  }
+
+  .content h5 {
+    opacity: 0;
+    animation: fadein 800ms ease-in 1200ms forwards;
+}
+
+.content h6 {
+    opacity: 0;
+    animation: fadein 800ms ease-in 1600ms forwards;
+}
+
+.content p {
+    opacity: 0;
+    animation: fadein 800ms ease-in 2200ms forwards;
+}
