@@ -1,0 +1,190 @@
+* {
+   margin: 0px;
+   box-sizing: border-box;
+   font-family: 'Modern Antiqua', cursive;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.clock-frame-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: relative;
+    width: 848px;
+    height: 848px;
+
+    background: radial-gradient(64.58% 82.61% at 28.77% 21.82%, #835E00 0%, rgba(255, 255, 255, 0) 100%), radial-gradient(34.02% 34.02% at 84.02% 70.05%, #836600 0.09%, rgba(255, 255, 255, 0) 100%), #D9A900;
+    box-shadow: 4px 4px 12px 2px rgba(0, 0, 0, 0.25);
+    
+}
+
+.clock-frame-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 780px;
+    height: 780px;
+
+    background: #363636;
+}
+
+.clock-frame-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    
+    width: 693px;
+    height: 693px;
+
+    background: #C4C4C4;
+}
+
+.clock-frame-4 {
+    border-radius: 50%;
+    
+    width: 669px;
+    height: 669px;
+
+    background: #FFFFFF;
+    box-shadow: inset 4px 4px 12px 5px rgba(0, 0, 0, 0.37);
+    position: relative;
+}
+
+.num {
+    width: 669px;
+    height: 669px;
+    position: absolute;
+
+    font-family: Modern Antiqua;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 52px;
+    line-height: 59px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #2C2C2C;
+}
+
+.num .tick {
+    width: 10px;
+    height: 27px;
+    background: #2C2C2C;
+    border-radius: 7px;
+    margin: 20px auto 0px auto;
+}
+
+.num-1 {
+    transform: rotate(30deg);
+}
+.num-2 {
+    transform: rotate(60deg);
+}
+.num-3 {
+    transform: rotate(90deg);
+}
+.num-3 .number {
+    transform: rotate(-90deg);
+}
+
+.num-4 {
+    transform: rotate(120deg);
+}
+.num-5 {
+    transform: rotate(150deg);
+}
+.num-6 {
+    transform: rotate(180deg);
+}
+.num-6 .number {
+    transform: rotate(-180deg);
+}
+.num-7 {
+    transform: rotate(210deg);
+}
+.num-8 {
+    transform: rotate(240deg);
+}
+.num-9 {
+    transform: rotate(270deg);
+}
+.num-9 .number {
+    transform: rotate(90deg);
+}
+.num-10 {
+    transform: rotate(300deg);
+}
+.num-11 {
+    transform: rotate(330deg);
+}
+.num-12 {
+    transform: rotate(360deg);
+}
+
+
+/* Dials */
+
+.cover {
+    background: #2C2C2C;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+}
+
+.minute {
+    width: 160px;
+    height: 14px;
+    background: #2C2C2C;
+    border-radius: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(0, -50%) rotate(270deg);
+    transform-origin: 0% center;
+}
+
+.hour {
+    width: 102px;
+    height: 20px;
+    background: #2C2C2C;
+    border-radius: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(0, -50%) rotate(270deg);
+    transform-origin: 0% center;
+}
+
+.second {
+    
+    width: 290px;
+    height: 8px;
+    background: #8D0000;
+    border-radius: 15px; 
+    
+    position: absolute;
+    top: 50%;
+    left: 39.2%;
+    transform: translate(-50%, -50%) rotate(90deg);
+    transform-origin: 75% center;
+
+    transition: 400ms ease-in-out;
+
+    
+}

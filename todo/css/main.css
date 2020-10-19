@@ -42,6 +42,8 @@ body {
     position: absolute;
     right: 1em;
     margin-top: 7px;
+    outline: none;
+    cursor: pointer;
 
 }
 
@@ -91,6 +93,10 @@ body {
 
 .todo-table thead tr th:first-child {
     border-radius: 10px 0px 0px 0px;
+}
+
+.todo-table thead tr th:nth-child(2) {
+    text-align: left;
 }
 
 .todo-table thead tr th:last-child {

@@ -1,0 +1,162 @@
+* {
+   margin: 0px;
+   box-sizing: border-box;
+   
+}
+
+body {
+    font-family: 'Amita', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.clock-container {
+    
+    position: relative;
+    width: 956px;
+    height: 956px;
+    border-radius: 50%;
+    background: #222222;
+    overflow: hidden;
+}
+
+.clock-front {
+    
+    position: relative;
+    top: -1400px;
+    left: -700px;
+    width: 1498px;
+    height: 1498px;
+    border-radius: 50%;
+    background: #3C3C3C;
+}
+
+.clock-face {
+    
+    position: relative;
+    z-index: 2;
+    border-radius: 50%;
+    width: 824px;
+    height: 824px;
+    margin: 66px auto;
+    background: #EAEAEA;
+    box-shadow: inset 0px 0px 25px 30px rgba(0, 0, 0, 0.25);
+}
+
+
+.num {
+    position: absolute;
+    width: 824px;
+    height: 824px;
+    top: 0px;
+    left: 0px;
+    /* transform: rotate(180deg); */
+}
+
+.num .tick-text {
+    font-family: Amita;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 70px;
+    line-height: 70px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #000000;
+    /* transform: rotate(-180deg); */
+}
+
+.num .tick-thick {
+    width: 10px;
+    height: 31px;
+    margin: 25px auto 5px auto;
+    background: #222222;
+}
+
+.num .tick-thin {
+    width: 4px;
+    height: 16px;
+    margin: 25px auto 5px auto;
+    background: #222222;
+}
+
+
+/* Dials */
+
+.top-notch {
+    position: absolute;
+    width: 19px;
+    height: 19px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+
+    background: #222222;
+    z-index: 5;
+}
+
+.hours {
+    position: absolute;
+    top: 50%;
+    left: 44%;
+    transform-origin: 74.3% center;
+    transform: translate(-50%, -50%) rotate(90deg);
+    width: 196.91px;
+    height: 13.49px;
+
+    background: #222222;
+    border-radius: 13px;
+    
+}
+
+.minutes {
+    position: absolute;
+    top: 50%;
+    left: 38%;
+    transform-origin: 77.4% center;
+    transform: translate(-50%, -50%) rotate(90deg);
+    width: 359px;
+    height: 15px;
+
+    background: #222222;
+    border-radius: 13px;
+    
+}
+
+.seconds {
+    position: absolute;
+    top: 50%;
+    left: 42%;
+    transform-origin: 69.4% center;
+    transform: translate(-50%, -50%) rotate(90deg);
+    width: 339px;
+    height: 29px;
+}
+
+.seconds .long-part {
+    position: absolute;
+    top: 50%;
+    left: 38%;
+    transform: translate(-50%, -50%);
+    width: 359px;
+    height: 5px;
+
+    background: #AC0000;
+    border-radius: 13px;
+}
+.seconds .round-part {
+    position: absolute;
+    top: 50%;
+    left: 68.5%;
+    transform: translate(-40%, -50%);
+    width: 29px;
+    height: 29px;
+
+    background: #AC0000;
+    border-radius: 50%;
+}
