@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Alarm Clock</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/clock.css">
+</head>
+<body>
+    <div class="clock-container">
+        <svg viewBox="0 0 100 100">
+            <circle class="circle" r="45%" cx="50%" cy="50%" fill="none" stroke="red" stroke-width="5%" ></circle>
+        </svg>
+        <div class="clock-bg">
+            <div class="clock-alarm">
+                <span class="material-icons">alarm</span>
+                <input type="time" >
+            </div>
+            <div class="clock-days">
+                <span>SUN</span>
+                <span>MON</span>
+                <span>TUE</span>
+                <span class="active">WED</span>
+                <span>THU</span>
+                <span>FRI</span>
+                <span>SAT</span>
+            </div>
+            <div class="clock-time-holder">
+                <div class="clock-time">
+                    <span>12</span>
+                    <span class="clock-colon">:</span>
+                    <span>00</span>
+                </div>
+                <div class="clock_am_pm">
+                    <div class="clock_am">AM</div>
+                    <div class="clock_pm active">PM</div>
+                </div>
+            </div>
+            <div class="clock-sound-buttons">
+                <div class="clock-sound-off">
+                    <span class="material-icons">notifications_off</span>
+                    <span>Off</span>
+                </div>
+                <div class="clock-sound-on active">
+                    <span class="material-icons">notifications</span>
+                    <span>On</span>
+                </div>
+            </div>
+            <div class="clock-date-holder">
+                <div class="clock-date">25</div>
+                <div class="clock-rem">
+                    <div>January</div>
+                    <div>2020</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/clock.js"></script>
+</body>
+</html>

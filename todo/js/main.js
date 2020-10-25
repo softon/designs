@@ -1,23 +1,26 @@
-let todos = [
-    {
-        title: 'Drink Milk',
-        status: 'Pending'
-    },
-    {
-        title: 'Make Breakfast',
-        status: 'Pending'
-    },
-    {
-        title: 'Eat Lunch',
-        status: 'Complete'
-    },
-    {
-        title: 'Sleep',
-        status: 'Pending'
-    }
-];
+let todos = [];
 
-getTodosFromStorage();
+
+  
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+const dbRef = firebase.database().ref();
+const todosRef = dbRef.child('todos');
+todosRef.on("child_added", snap => {
+    todos.push(snap.val());
+    console.log(snap.val());
+    renderTodo();
+});
+
+todosRef.on("value", snap => {
+    
+    todos = snap.val();
+    renderTodo();
+});
+
+//getTodosFromStorage();
+getTodosFromFirebase();
 
 
 let todoForm = document.querySelector(".todo-form form");
@@ -51,10 +54,32 @@ htmlBody.addEventListener('click', function(e){
 htmlBody.addEventListener('dblclick', function(e){
     if(e.target.nodeName=='TD'){
         let tr = e.target.parentNode;
-        todos.splice(tr.firstElementChild.firstElementChild.id, 1);
-        renderTodo();
-        calculateTodoStatus();
+        let deleteBtn = document.querySelector(".delete-btn");
+        deleteBtn.dataset.id = tr.firstElementChild.firstElementChild.id;
+        let confirmModal = document.querySelector(".confirm-modal");
+        confirmModal.classList.remove('hide-modal');
+        /* if(confirm('Are you sure to delete this?')){
+            todos.splice(tr.firstElementChild.firstElementChild.id, 1);
+            renderTodo();
+            calculateTodoStatus();
+        } */
+        
     }
+});
+
+document.querySelector(".cancel-btn").addEventListener('click', function (e){
+    let confirmModal = document.querySelector(".confirm-modal");
+    confirmModal.classList.add('hide-modal');
+});
+
+document.querySelector(".delete-btn").addEventListener('click', function (e){
+    let id = e.target.dataset.id;
+    todos.splice(id, 1);
+    renderTodo();
+    calculateTodoStatus();
+    
+    let confirmModal = document.querySelector(".confirm-modal");
+    confirmModal.classList.add('hide-modal');
 });
 
 
@@ -104,7 +129,7 @@ function renderTodo(){
 renderTodo();
 
 function saveToStorage(){
-    localStorage.setItem('todos', JSON.stringify(todos));
+    //localStorage.setItem('todos', JSON.stringify(todos));
 }
 
 function getTodosFromStorage(){
@@ -114,3 +139,10 @@ function getTodosFromStorage(){
         todos = JSON.parse(localStorage.getItem('todos'));
     }
 }
+
+function getTodosFromFirebase(){
+    
+    
+}
+
+

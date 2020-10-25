@@ -1,0 +1,220 @@
+* {
+   margin: 0px;
+   box-sizing: border-box;
+   padding: 0px;
+}
+
+:root {
+    font-size: 1.7vw;
+}
+
+body {
+    background-image: linear-gradient(to right top, #eeeeee, #e8e8e8, #e2e2e2, #dcdcdc, #d6d6d6);
+    width: 100vw;
+    height: 100vh;
+    background-size: 500%;
+    background-position: bottom left;
+    animation: bganimate 10s infinite alternate;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.clock-container {
+    position: relative;
+    width: 50%;
+    height: 0;
+    padding-bottom: 50%;
+}
+
+.clock-ring {
+    fill: #FF0F00;
+}
+
+.clock-bg {
+
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    background: linear-gradient(180deg, #303030 0%, #363636 23.96%, #3C3C3C 50.52%, #424242 71.35%, #484848 100%);
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #939393;
+    gap: 1em;
+}
+
+.clock-bg div {
+    position: relative;
+}
+
+.clock-alarm {
+    background: rgba(0, 0, 0, 0.24);
+    padding: .4em 0.8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5em;
+}
+
+.clock-alarm input {
+    border: none;
+    outline: none;
+    background: none;
+    width: 80%;
+    color: #939393;
+}
+
+.clock-days {
+    display: flex;
+    justify-content: center;
+    gap: .6em;
+    font-size: .5rem;
+}
+
+.clock-days span {
+    background: #6A6A6A;
+    border-radius: 23px;
+    padding: .3em .7em;
+}
+
+.clock-days span.active {
+    background: #FF0F00;
+    color: white;
+}
+
+.clock-time-holder {
+    display: flex;
+    justify-content: center;
+    gap: .6em;
+}
+
+.clock-time-holder .clock-time {
+    font-size: 5rem;
+    color: #FF0F00;
+    display: flex;
+}
+
+.clock-colon {
+    animation: pulse 1s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.clock_am_pm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5em;
+}
+
+.clock_am_pm div {
+    background: #6A6A6A;
+    border-radius: 5px;
+    padding: .2em .6em;
+    font-size: .8rem;
+    
+}
+
+.clock_am_pm div.active {
+    background: #FF0F00;
+    color: white;
+    
+}
+
+.clock-sound-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+.clock-sound-buttons div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5em;
+    cursor: pointer;
+}
+
+.clock-sound-buttons div.active {
+    color: #FF0F00;
+}
+
+.clock-date-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .4em;
+    color: #D8D8D8;
+}
+
+.clock-date {
+    font-size: 2.8rem;
+}
+
+.clock-rem div:nth-child(1) {
+    color: #FF0F00;
+}
+
+
+
+:root{
+    --dash: 1200;
+  }
+  
+  .circle {
+        
+        stroke-dasharray: 0 calc(45% * 2 * 3.14);
+        /*animation: anim 500ms forwards;*/
+        transform: rotate(-90deg);
+        transform-origin: 50% 50%;
+        transition: 200ms;
+      }
+  
+  
+      @keyframes anim {      
+        100% {
+          stroke-dasharray: var(--dash);
+          
+        }
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes bganimate {
+    100% {
+        background-position: top right;
+    }
+}
