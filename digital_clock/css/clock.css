@@ -5,14 +5,14 @@
 }
 
 :root {
-    font-size: 1.7vw;
+    font-size: clamp(8px, 2.8vw, 35px);
 }
 
 body {
     background-image: linear-gradient(to right top, #eeeeee, #e8e8e8, #e2e2e2, #dcdcdc, #d6d6d6);
     width: 100vw;
     height: 100vh;
-    background-size: 500%;
+    
     background-position: bottom left;
     animation: bganimate 10s infinite alternate;
 
@@ -24,10 +24,12 @@ body {
 
 .clock-container {
     position: relative;
-    width: 50%;
-    height: 0;
-    padding-bottom: 50%;
+    width: 100%;
+    max-width: 100vh;
+    height: 100%;
+    max-height: 100vw;
 }
+
 
 .clock-ring {
     fill: #FF0F00;
@@ -171,6 +173,32 @@ body {
 .clock-rem div:nth-child(1) {
     color: #FF0F00;
 }
+
+
+.ringing {
+    animation: shake 0.42s cubic-bezier(.36,.07,.19,.97) both infinite;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
 
 
 
