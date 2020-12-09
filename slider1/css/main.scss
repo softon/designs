@@ -5,21 +5,25 @@
 }
 
 body {
+    width: 100vw;
+    min-height: 100vh;
 
 }
 
 .logo {
     text-align: center;
     width: 100%;
-    margin: 20px auto;
+    padding: 20px;
 }
 
 .slider-container {
-    width: 100vw;
+    position: relative;
+    width: 100%;
+    height: auto;
     
     .slider-contents {
         position: relative;
-        width: 100vw;
+        width: 100%;
     }
     
     .slider {
@@ -54,21 +58,29 @@ body {
         border-radius: 5px;
         margin-top: 10px;
     }
+
+    .slider-controls {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 56.25vw;
+        z-index: 100;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+    
+    
+    .slider-controls #slide-prev {
+       
+    }
+    
+    .slider-controls #slide-next {
+       
+    }
 }
 
 
-.slider-controls {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.slider-controls #slide-prev {
-    margin-left: 20px;
-    margin-top: 50px;
-}
-
-.slider-controls #slide-next {
-    margin-right: 20px;
-    margin-top: 50px;
-}

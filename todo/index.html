@@ -4,11 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Todo App</title>
+    <script src="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.css" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
     <div class="container">
+        <div class="auth">
+            <h1>Login to Continue</h1>
+            <div id="firebaseui-auth-container"></div>
+            <div id="loader">Loading...</div>
+        </div>
         <div class="todo-form">
             <form action="">
                 <input type="text" name="todoname" placeholder="Add new Todo...">
@@ -63,7 +70,7 @@
             </div>
         </div>
     </div>
-    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase.js"></script>
-    <script  src="./js/main.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase.js"></script>
+    <script  src="./js/main2.js" type="module"></script>
 </body>
 </html>

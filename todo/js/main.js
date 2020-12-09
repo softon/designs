@@ -1,27 +1,6 @@
-let todos = [];
+import { todos,addTodo,removeTodo,markComplete,markPending } from 'js/todos';
 
-
-  
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
-const dbRef = firebase.database().ref();
-const todosRef = dbRef.child('todos');
-todosRef.on("child_added", snap => {
-    todos.push(snap.val());
-    console.log(snap.val());
-    renderTodo();
-});
-
-todosRef.on("value", snap => {
-    
-    todos = snap.val();
-    renderTodo();
-});
-
-//getTodosFromStorage();
-getTodosFromFirebase();
-
+getTodosFromStorage();
 
 let todoForm = document.querySelector(".todo-form form");
 let htmlBody = document.querySelector(".todo-table table tbody");
@@ -140,9 +119,6 @@ function getTodosFromStorage(){
     }
 }
 
-function getTodosFromFirebase(){
-    
-    
-}
+
 
 

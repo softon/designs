@@ -19,7 +19,7 @@ setInterval(function(){
     minutesHandle.style.transform = `translate(-50%, -50%) rotate(${((timeObj.minute/60)*360)+90}deg)`;
     hoursHandle.style.transform = `translate(-50%, -50%) rotate(${((timeObj.hour/12)*360)+90}deg)`;
     
-}, 1000);
+}, 6000);
 
 
 
